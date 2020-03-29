@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="settings">
+<!--        <label for="animals">Animals start count</label>-->
+<!--        <input type="number" id="animals" value="10">-->
+
+<!--        <label for="foods">Foods start count</label>-->
+<!--        <input type="number" id="foods" value="10">-->
+
+<!--        <label for="speed">Speed: min 5(fastest) - max 200(lowest)</label>-->
+<!--        <input type="number" id="speed" min="5" max="200" value="10">-->
+
+        <button id="submit" onclick="start()">Start</button>
+
+        <div id="stats">
+            <h3>Days alive <span id="days-alive"></span></h3>
+            <h3>Animals created <span id="max-animals"></span></h3>
+        </div>
+    </div>
+    <div class="world-wrapper">
+        <div>
+            <div>
+                <h2>Day <span id="days">1</span></h2>
+            </div>
+        </div>
+        <canvas id="world" height="600" width="600">
+            <p>Canvas not supported by your browser</p>
+        </canvas>
+    </div>
+</div>
+
+<div id="chartContainer"></div>
+
+<script src="./js/canvasjs.min.js"></script>
+
+<script src="./js/settings.js"></script>
+<script src="./js/methods.js"></script>
+<script src="./js/objects/Animal.js"></script>
+<script src="./js/objects/Food.js"></script>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
